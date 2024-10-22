@@ -12,7 +12,6 @@ function App() {
     const {title} = blog
     const newBookMarks = [...bookmarks, title]
     setBookmark(newBookMarks);
-    // console.log(bookmarks);
   }
   return (
     <>
