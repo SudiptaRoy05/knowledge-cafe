@@ -11,5 +11,5 @@ export default function Bookmark({bookmark}) {
 
 Bookmark.propTypes = {
     // blog: PropTypes.object.isRequired,
-    bookmark: PropTypes.array.isRequired,
+    bookmark: PropTypes.object.isRequired,
   };
