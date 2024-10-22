@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
+import { CiBookmark } from "react-icons/ci";
 
-export default function Blog({ blog }) {
+export default function Blog({ blog, handleAddToBookMarks }) {
   const { title, cover, author, author_img, posted_date, reading_time, hashTags } = blog;
-  console.log(blog);
+
   return (
-    <div className="">
+    <div className="mb-8">
       <img src={cover} alt={`cover pic ${title}`}></img>
       <div className="flex justify-between items-center py-5">
         <div className="flex juxtify-between items-center gap-3">
@@ -18,12 +19,13 @@ export default function Blog({ blog }) {
           <p>{posted_date}</p>
           </div>
         </div>
-        <div>
+        <div className="flex gap-1">
           <span>{reading_time} min read</span>
+          <button onClick={()=>handleAddToBookMarks(blog.title)} ><CiBookmark /></button>
         </div>
       </div>
       <p className="text-3xl font-bold">{title}</p>
-      <p className="mb-8">
+      <p className="">
         {
           hashTags.map((hash, idx) => <span key={idx}><a href="">{hash}</a></span>)
         }

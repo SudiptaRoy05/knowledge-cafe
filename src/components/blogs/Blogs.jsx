@@ -3,7 +3,7 @@ import { useState } from "react";
 import Blog from "../blog/Blog";
 
 
-export default function Blogs() {
+export default function Blogs({handleAddToBookMarks}) {
     const [blogs, setBlogs] = useState([]);
     useEffect(()=>{
         fetch('../../../public/blog.json')
@@ -16,7 +16,9 @@ export default function Blogs() {
         {
             blogs.map(blog => <Blog 
                 key={blog.id} 
-                blog ={blog}></Blog>)
+                blog ={blog}
+                handleAddToBookMarks={handleAddToBookMarks}
+                ></Blog>)
         }
     </div>
   )
