@@ -21,7 +21,7 @@ export default function Blog({ blog, handleAddToBookMarks }) {
         </div>
         <div className="flex gap-1">
           <span>{reading_time} min read</span>
-          <button onClick={()=>handleAddToBookMarks(blog.title)} ><CiBookmark /></button>
+          <button onClick={()=>handleAddToBookMarks(blog)} ><CiBookmark /></button>
         </div>
       </div>
       <p className="text-3xl font-bold">{title}</p>
@@ -36,4 +36,5 @@ export default function Blog({ blog, handleAddToBookMarks }) {
 
 Blog.propTypes = {
   blog: PropTypes.object.isRequired,
+  handleAddToBookMarks: PropTypes.func.isRequired,
 };
