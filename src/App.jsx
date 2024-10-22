@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header></Header>
-      <main className="w-10/12 mx-auto md:flex grid">
+      <main className="w-10/12 mx-auto md:flex grid gap-6 mt-5">
        
         <Blogs></Blogs>
        
