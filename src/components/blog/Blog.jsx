@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { CiBookmark } from "react-icons/ci";
 
-export default function Blog({ blog, handleAddToBookMarks }) {
+export default function Blog({ blog, handleAddToBookMarks, handleMarkAsReadBtn }) {
   const { title, cover, author, author_img, posted_date, reading_time, hashTags } = blog;
 
   return (
@@ -30,6 +30,7 @@ export default function Blog({ blog, handleAddToBookMarks }) {
           hashTags.map((hash, idx) => <span key={idx}><a href="">{hash}</a></span>)
         }
       </p>
+      <button className="text-purple-600 underline" onClick={()=>handleMarkAsReadBtn(reading_time)} >Mark as read</button>
     </div>
   );
 }
@@ -37,4 +38,5 @@ export default function Blog({ blog, handleAddToBookMarks }) {
 Blog.propTypes = {
   blog: PropTypes.object.isRequired,
   handleAddToBookMarks: PropTypes.func.isRequired,
+  handleMarkAsReadBtn: PropTypes.func.isRequired
 };

@@ -7,18 +7,28 @@ import Header from "./components/Header/Header";
 function App() {
 
   const [bookmarks, setBookmark] = useState([])
+  const [markAsRead, setMarkAsRead] = useState(0)
 
   const handleAddToBookMarks=(blog)=>{
-    const {title} = blog
-    const newBookMarks = [...bookmarks, title]
+    // const {title} = blog
+    const newBookMarks = [...bookmarks, blog]
     setBookmark(newBookMarks);
+  }
+
+  const handleMarkAsReadBtn=(time)=>{
+    setMarkAsRead(markAsRead+Number(time))
+    // console.log(markAsRead);
   }
   return (
     <>
       <Header></Header>
       <main className="w-10/12 mx-auto md:flex grid gap-6 mt-5">
-        <Blogs handleAddToBookMarks={handleAddToBookMarks}></Blogs>
-        <Bookmarks bookmarks={bookmarks}></Bookmarks>
+        <Blogs handleAddToBookMarks={handleAddToBookMarks}
+        handleMarkAsReadBtn={handleMarkAsReadBtn}
+        ></Blogs>
+        <Bookmarks bookmarks={bookmarks}
+        markAsRead={markAsRead}
+        ></Bookmarks>
         
       </main>
     </>
