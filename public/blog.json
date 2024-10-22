@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "cover": "https://i.ibb.co.com/xXfMwvk/1.jpg",
+        "title": "The Whispering Shadows",
+        "author_img": "https://images.unsplash.com/photo-1529651739753-37f1b5301c4b",
+        "posted_date": "2024-10-01",
+        "reading_time": "120",
+        "hashTags": ["#mystery", "#thriller", "#fiction"]
+    },
+    {
+        "id": 2,
+        "cover": "https://i.ibb.co.com/F5cF8dQ/2.png",
+        "title": "Beyond the Horizon",
+        "author_img": "https://images.unsplash.com/photo-1488821281744-5c6c9a923c8d",
+        "posted_date": "2024-09-15",
+        "reading_time": "180",
+        "hashTags": ["#adventure", "#travel", "#inspiration"]
+    },
+    {
+        "id": 3,
+        "cover": "https://i.ibb.co.com/SDTzmyX/3.png",
+        "title": "Echoes of the Past",
+        "author_img": "https://images.unsplash.com/photo-1529631361390-788623e1bb24",
+        "posted_date": "2024-08-22",
+        "reading_time": "90",
+        "hashTags": ["#historical", "#drama", "#novel"]
+    },
+    {
+        "id": 4,
+        "cover": "https://i.ibb.co.com/k817zf1/4.jpg",
+        "title": "The Lost City",
+        "author_img": "https://images.unsplash.com/photo-1541515497754-1b5a3d79f98c",
+        "posted_date": "2024-07-10",
+        "reading_time": "240",
+        "hashTags": ["#fantasy", "#quest", "#fiction"]
+    },
+    {
+        "id": 5,
+        "cover": "https://i.ibb.co.com/NWKzcxV/handshake.png",
+        "title": "The Silent Observer",
+        "author_img": "https://images.unsplash.com/photo-1541072008255-4a9820ae3c72",
+        "posted_date": "2024-06-30",
+        "reading_time": "150",
+        "hashTags": ["#suspense", "#psychological", "#thriller"]
+    }
+]
